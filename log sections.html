@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Support Dashboard</h1>
+    </header>
+    
+    <section id="support-ticket">
+        <h2>Submit a Support Ticket</h2>
+        <form id="ticket-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="issue">Describe Your Issue:</label>
+            <textarea id="issue" name="issue" required></textarea><br>
+            
+            <button type="submit">Submit Ticket</button>
+        </form>
+    </section>
+    
+    <section id="error-log">
+        <h2>Error Log</h2>
+        <ul id="log-list">
+            <!-- Log entries will go here -->
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
